@@ -1,0 +1,13 @@
+inherits = "material_deep_ocean"
+
+#"ui.background" = { bg = "#121212" }
+"ui.cursorline.primary" = { bg = "#2b2b2b" }
+"ui.selection" = { bg = "#3c3f41" }
+"ui.selection.primary" = { bg = "#4db6ac", fg = "#000000" }
+
+"comment" = { fg = "#757575", modifiers = ["italic"] }
+
+"ui.menu" = { fg = "#eeffff", bg = "#263238" }
+"ui.menu.selected" = { fg = "#000000", bg = "#82aaff" }
+
+"ui.window" = { fg = "#37474f" }
