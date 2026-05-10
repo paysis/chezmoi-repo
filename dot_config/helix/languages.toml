@@ -1,5 +1,6 @@
 [[language]]
 name = "rust"
+language-servers = ["rust-analyzer", "helix-assist"]
 auto-format = true
 
 [language-server.rust-analyzer.config]
@@ -9,7 +10,7 @@ inlayHints = { typeHints = true, parameterHints = true, chainingHints = true }
 
 [[language]]
 name = "python"
-language-servers = ["pyright", "ruff"]
+language-servers = ["pyright", "ruff", "helix-assist"]
 auto-format = true
 
 [language-server.pyright.config.python.analysis]
@@ -20,4 +21,16 @@ useLibraryCodeForTypes = true
 [language-server.ruff]
 command = "ruff"
 args = ["server"]
+
+[language-server.helix-assist]
+command = "helix-assist"
+args = ["--handler", "openai", "--openai-model", "qwen2.5-coder:3b-base-q5_K_M", "--openai-endpoint", "http://127.0.0.1:11434/v1"]
+
+[[language]]
+name = "go"
+language-servers = ["gopls", "helix-assist"]
+
+[[language]]
+name = "typescript"
+language-servers = ["typescript-language-server", "helix-assist"]
 
